@@ -6,10 +6,12 @@ try {
     $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
     Install-ChocolateyZipPackage "$packageName" "$url" $toolsDir
 
-    $fileFullPath = get-childitem $toolsDir -recurse -include *.exe | select -First 1
-    Install-ChocolateyInstallPackage "$packageName" "exe" "$silentArgs" "$fileFullPath"
-
-    Remove-Item "$fileFullPath"
+    $exeFilePath = get-childitem $toolsDir -recurse -include *.exe | select -First 1
+    Install-ChocolateyInstallPackage "$packageName" "exe" "$silentArgs" "$exeFilePath"
+    
+    $logFilePath = get-childitem $toolsDir -recurse -include *.txt | select -First 1
+    Remove-Item "$exeFilePath"
+    Remove-Item "$logFilePath"
     
     Write-ChocolateySuccess "$packageName"
 } catch {
