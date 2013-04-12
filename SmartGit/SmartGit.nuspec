@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>SmartGit</id>
+    <title>SmartGit/HG</title>
+    <version>4.0.5</version>
+    <authors>sebnilsson</authors>
+    <owners>sebnilsson</owners>
+    <summary>SmartGit/HG</summary>
+    <description>SmartGit/HG - Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://www.syntevo.com/smartgit/</projectUrl>
+    <tags>chocolatey smartgit git github development hg mercurial dvcs admin</tags>
+    <copyright></copyright>
+    <licenseUrl>http://www.syntevo.com/smartgithg/license.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.github.com/sebnilsson/ChocolateyPackages/master/SmartGit/logo.png</iconUrl>
+    <dependencies>
+      <dependency id="javaruntime" />
+    </dependencies>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
+</package>
