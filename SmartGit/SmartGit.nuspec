@@ -7,7 +7,7 @@
     <authors>sebnilsson</authors>
     <owners>sebnilsson</owners>
     <summary>SmartGit/HG</summary>
-    <description>SmartGit/HG - Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <description>SmartGit/Hg is a client for Git and Mercurial.</description>
     <projectUrl>http://www.syntevo.com/smartgit/</projectUrl>
     <tags>chocolatey smartgit git github development hg mercurial dvcs admin</tags>
     <copyright></copyright>
