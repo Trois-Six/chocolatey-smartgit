@@ -3,7 +3,7 @@
   <metadata>
     <id>SmartGit</id>
     <title>SmartGit/HG</title>
-    <version>4.5.3</version>
+    <version>4.5.4</version>
     <authors>sebnilsson</authors>
     <summary>SmartGit/HG</summary>
     <description>SmartGit/Hg is a client for Git and Mercurial.</description>
