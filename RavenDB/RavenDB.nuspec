@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>RavenDB</id>
+    <title>RavenDB</title>
+    <version>2.5.2700</version>
+    <authors>sebnilsson</authors>
+    <summary>RavenDB Production Release</summary>
+    <description>RavenDB is an document database for the .NET/Windows platform.</description>
+    <projectUrl>http://ravendb.net/</projectUrl>
+    <tags>ravendb raven nosql document database db</tags>
+    <copyright></copyright>
+    <licenseUrl>http://ravendb.net/docs/appendixes/licensing</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.github.com/sebnilsson/ChocolateyPackages/master/RavenDB/logo.png</iconUrl>
+    <dependencies></dependencies>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
