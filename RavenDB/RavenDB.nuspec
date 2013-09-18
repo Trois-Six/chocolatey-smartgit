@@ -3,8 +3,9 @@
   <metadata>
     <id>RavenDB</id>
     <title>RavenDB</title>
-    <version>2.5.2700</version>
-    <authors>sebnilsson</authors>
+    <version>2.5.2700.1</version>
+    <authors>Hibernating Rhinos</authors>
+    <owners>sebnilsson</owners>
     <summary>RavenDB Production Release</summary>
     <description>RavenDB is an document database for the .NET/Windows platform.</description>
     <projectUrl>http://ravendb.net/</projectUrl>
