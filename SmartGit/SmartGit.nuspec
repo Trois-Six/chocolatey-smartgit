@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>SmartGit</id>
-    <title>SmartGit/HG</title>
-    <version>4.6.4</version>
+    <title>SmartGit/Hg</title>
+    <version>4.6.5</version>
     <authors>syntevo</authors>
     <owners>sebnilsson</owners>
-    <summary>SmartGit/HG</summary>
+    <summary>SmartGit/Hg</summary>
     <description>SmartGit/Hg is a client for Git and Mercurial.</description>
     <projectUrl>http://www.syntevo.com/smartgit/</projectUrl>
     <tags>smartgit git github hg mercurial dvcs</tags>
