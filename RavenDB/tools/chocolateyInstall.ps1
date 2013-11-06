@@ -1,5 +1,5 @@
 ﻿$packageName = 'RavenDB'
-$url = 'http://hibernatingrhinos.com/downloads/RavenDB%20Installer/2700'
+$url = 'http://hibernatingrhinos.com/downloads/RavenDB%20Installer/2750'
 
 try {
 	# $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
