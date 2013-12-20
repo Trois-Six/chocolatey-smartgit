@@ -1,5 +1,5 @@
 ﻿$packageName = 'SmartGit'
-$url = 'http://www.syntevo.com/download/smartgithg/smartgithg-win32-setup-nojre-5_0_3.zip'
+$url = 'http://www.syntevo.com/download/smartgithg/smartgithg-win32-setup-nojre-5_0_4.zip'
 $silentArgs = '/sp- /silent /norestart'
 
 try {
