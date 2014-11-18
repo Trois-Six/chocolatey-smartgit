@@ -1,8 +1,20 @@
 ﻿$packageName = 'SmartGit'
-$url = 'http://www.syntevo.com/download/smartgithg/smartgithg-win32-setup-nojre-6_0_7.zip'
+$version = '6_0_8'
+$fileType = '.zip'
 $silentArgs = '/sp- /silent /norestart'
 
 try {
+    $url = 'http://www.syntevo.com/download/smartgit/smartgit-win32-setup-nojre-' + $version + $fileType
+
+    $httpRequest = [System.Net.WebRequest]::Create('$url')
+    $httpResponse = $httpRequest.GetResponse()
+    $httpStatus = [int]$httpResponse.StatusCode
+
+    if (!($httpStatus = 200)) {
+        Write-Error "File not found, trying to find it in the archive"
+        $url = 'http://www.syntevo.com/download/smartgithg/archive/smartgithg-win32-setup-nojre-' + $version + $fileType
+    }
+
     $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
     Install-ChocolateyZipPackage "$packageName" "$url" $toolsDir
 
