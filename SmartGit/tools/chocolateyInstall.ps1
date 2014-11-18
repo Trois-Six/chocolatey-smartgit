@@ -1,12 +1,12 @@
 ﻿$packageName = 'SmartGit'
-$version = '6_0_8'
+$version = '6_5_0'
 $fileType = '.zip'
 $silentArgs = '/sp- /silent /norestart'
 
 try {
     $url = 'http://www.syntevo.com/download/smartgit/smartgit-win32-setup-nojre-' + $version + $fileType
 
-    $httpRequest = [System.Net.WebRequest]::Create('$url')
+    $httpRequest = [System.Net.WebRequest]::Create($url)
     $httpResponse = $httpRequest.GetResponse()
     $httpStatus = [int]$httpResponse.StatusCode
 
