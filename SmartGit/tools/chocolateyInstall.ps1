@@ -1,5 +1,5 @@
 ﻿$packageName = 'SmartGit'
-$version = '6_5_0'
+$version = '6_5_1'
 $fileType = '.zip'
 $silentArgs = '/sp- /silent /norestart'
 
