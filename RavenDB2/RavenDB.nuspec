@@ -3,7 +3,7 @@
   <metadata>
     <id>RavenDB</id>
     <title>RavenDB</title>
-    <version>3.0.3528</version>
+    <version>2.5.2951</version>
     <authors>Hibernating Rhinos</authors>
     <owners>sebnilsson</owners>
     <summary>RavenDB Production Release</summary>
@@ -13,7 +13,7 @@
     <copyright></copyright>
     <licenseUrl>http://ravendb.net/docs/appendixes/licensing</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/sebnilsson/ChocolateyPackages/master/RavenDB/logo.png</iconUrl>
+    <iconUrl>https://raw.github.com/sebnilsson/ChocolateyPackages/master/RavenDB2/logo.png</iconUrl>
     <dependencies></dependencies>
     <releaseNotes></releaseNotes>
   </metadata>
