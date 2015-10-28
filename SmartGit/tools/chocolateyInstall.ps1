@@ -1,10 +1,10 @@
 ﻿$packageName = 'SmartGit'
-$version = '6_5_6'
+$version = '7_0_3'
 $fileType = '.zip'
 $silentArgs = '/sp- /silent /norestart'
 
 try {
-    $url = 'http://www.syntevo.com/downloads/smartgit/smartgit-win32-setup-nojre-' + $version + $fileType
+    $url = 'http://www.syntevo.com/smartgit/download?file=smartgit/smartgit-win32-setup-nojre-' + $version + $fileType
 
     $httpRequest = [System.Net.WebRequest]::Create($url)
     $httpResponse = $httpRequest.GetResponse()
@@ -12,7 +12,7 @@ try {
 
     if (!($httpStatus = 200)) {
         Write-Error "File not found, trying to find it in the archive"
-        $url = 'http://www.syntevo.com/download/smartgithg/archive/smartgithg-win32-setup-nojre-' + $version + $fileType
+        $url = 'http://www.syntevo.com/smartgit/download-archive?file=smartgithg/archive/smartgit-win32-setup-nojre-' + $version + $fileType
     }
 
     $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
