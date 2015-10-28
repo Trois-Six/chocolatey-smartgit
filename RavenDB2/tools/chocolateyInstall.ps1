@@ -1,20 +1,3 @@
-﻿$packageName = 'RavenDB'
-$url = 'http://hibernatingrhinos.com/downloads/RavenDB%20Installer/2951'
+﻿$url = 'http://hibernatingrhinos.com/downloads/RavenDB%20Installer/2971'
 
-try {
-	# $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-	# $downloadPath = Join-Path $toolsDir "raven-install.exe"
-
-	Install-ChocolateyPackage $packageName "exe" "" $url
-
-	# Get-ChocolateyWebFile $packageName $downloadPath $url
-
-    # Install-ChocolateyInstallPackage $packageName "exe" "" $downloadPath
-
-    # Remove-Item $downloadPath
-        
-    Write-ChocolateySuccess $packageName
-} catch {
-    Write-ChocolateyFailure $packageName "$($_.Exception.Message)"
-    throw
-}
+Install-ChocolateyPackage 'RavenDB' 'exe' '/quiet /msicl "RAVEN_TARGET_ENVIRONMENT=DEVELOPMENT TARGETDIR=C:\ INSTALLFOLDER=C:\RavenDB RAVEN_INSTALLATION_TYPE=SERVICE REMOVE=IIS ADDLOCAL=Service"' $url
